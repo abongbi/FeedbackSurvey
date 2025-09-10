@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Thank You - Feedback App{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body text-center">
+                <div class="mb-4">
+                    <i class="text-success" style="font-size: 4rem;">✓</i>
+                </div>
+                <h3 class="card-title">Thank You!</h3>
+                <p class="card-text">Your feedback has been submitted successfully.</p>
+                <p class="text-muted">You rated us {{ rating }} out of 5 stars.</p>
+                <div class="mt-4">
+                    <a href="{{ url_for('index') }}" class="btn btn-primary me-2">Submit More Feedback</a>
+                    <a href="{{ url_for('results') }}" class="btn btn-outline-secondary">View Results</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

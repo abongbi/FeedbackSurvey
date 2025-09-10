@@ -1,0 +1,76 @@
+/* Star Rating Styles */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+    color: #ffc107;
+}
+
+.star-rating label:hover {
+    transform: scale(1.1);
+}
+
+/* Additional styling */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border-bottom: none;
+}
+
+.rating-text {
+    text-align: center;
+}
+
+/* Chart container */
+#ratingChart {
+    max-height: 300px;
+}
+
+/* Responsive table */
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Success page styling */
+.text-success {
+    color: #28a745 !important;
+}
+
+/* Navbar styling */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
