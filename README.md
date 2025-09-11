@@ -1,4 +1,4 @@
-# Running the Flask Feedback App Locally on Windows
+# How to run the Feedback App Locally on Windows
 
 This guide provides Windows-specific instructions for setting up and running the Flask feedback collection application on your local Windows computer.
 
